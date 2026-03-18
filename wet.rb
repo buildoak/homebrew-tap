@@ -5,21 +5,21 @@
 class Wet < Formula
   desc "Context compression proxy for Claude Code"
   homepage "https://github.com/buildoak/wet"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/buildoak/wet/releases/download/v0.1.4/wet_0.1.4_darwin_amd64.tar.gz"
-      sha256 "6b2c913881df5ce44c321844fcfe70a445dc1d282b26bb2aad7f010771535efd"
+      url "https://github.com/buildoak/wet/releases/download/v0.1.5/wet_0.1.5_darwin_amd64.tar.gz"
+      sha256 "5a7b0bf89c2edbd7869789f371454bd2bd516887fcfae60aa47de81400259e6b"
 
       define_method(:install) do
         bin.install "wet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/buildoak/wet/releases/download/v0.1.4/wet_0.1.4_darwin_arm64.tar.gz"
-      sha256 "a31c95f22fb318870c8445e8de6847c963d69a75e9376be86cbf8eae4b234800"
+      url "https://github.com/buildoak/wet/releases/download/v0.1.5/wet_0.1.5_darwin_arm64.tar.gz"
+      sha256 "15cc8606e96517a090ef1f13cb7a453127c66bc2c0715fdb1c607af669522915"
 
       define_method(:install) do
         bin.install "wet"
@@ -29,15 +29,15 @@ class Wet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/buildoak/wet/releases/download/v0.1.4/wet_0.1.4_linux_amd64.tar.gz"
-      sha256 "909bfe2469badcfdf12df76330a8c571a4b3484f8dffd44528241a784a2e52da"
+      url "https://github.com/buildoak/wet/releases/download/v0.1.5/wet_0.1.5_linux_amd64.tar.gz"
+      sha256 "bd71fe46b5aac303f5aec6bbb97060cc8af28b9d5a549483f3ac5870c5171720"
       define_method(:install) do
         bin.install "wet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/buildoak/wet/releases/download/v0.1.4/wet_0.1.4_linux_arm64.tar.gz"
-      sha256 "bd2e5c1e93befa1c88017c0d41cb78d926f78338da27369bb5e43576574f2f6e"
+      url "https://github.com/buildoak/wet/releases/download/v0.1.5/wet_0.1.5_linux_arm64.tar.gz"
+      sha256 "ca5500468d1746de96d12c12f63939381636c7b7ac3ddd1174924b1955ea4a0f"
       define_method(:install) do
         bin.install "wet"
       end
