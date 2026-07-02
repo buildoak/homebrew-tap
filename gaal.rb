@@ -4,8 +4,8 @@
 class Gaal < Formula
   desc "Session observability CLI for AI coding agents"
   homepage "https://github.com/buildoak/gaal"
-  url "https://github.com/buildoak/gaal/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "13431aba8be8f888cd511f4fb95d13046424d3cc59751fffdce5e2e0f863ab69"
+  url "https://github.com/buildoak/gaal/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "63072907ceb347da111e864ca1ba5dcfa9f61a27e56754dab704be15e0ea8270"
   license "MIT"
 
   depends_on "rust" => :build

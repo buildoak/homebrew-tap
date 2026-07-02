@@ -4,8 +4,8 @@
 class AgentMux < Formula
   desc "Cross-engine dispatch layer for AI coding agents"
   homepage "https://github.com/buildoak/agent-mux"
-  url "https://github.com/buildoak/agent-mux/archive/refs/tags/agent-mux-v3.5.0.tar.gz"
-  sha256 "f8cd83ef66d5c28261e00bc91c02b33fa5747afbeb5eb5743db616897905033e"
+  url "https://github.com/buildoak/agent-mux/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "009dfab92955a886b77d4cffa16c175211eb03dadcd8256d67eaa910d75d3595"
   license "MIT"
 
   depends_on "go" => :build
